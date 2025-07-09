@@ -31,16 +31,24 @@ html, body {
 
 
 /* الخلفية ثابتة */
+/* القاعدة العامة لكل الأجهزة: بدون fixed */
 body {
   background-color: var(--text-color);
   color: var(--text-color);
   background-image: url('images/greenBackground.png');
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
-
-  /* بدون background-attachment: fixed */
+  background-attachment: scroll; /* هذا يحل مشاكل الآيفون */
 }
+
+/* إذا العرض أكبر من 1024px (كمبيوتر أو لابتوب)، نحط fixed */
+@media (min-width: 1024px) {
+  body {
+    background-attachment: fixed;
+  }
+}
+
 body::before {
   content: "";
   position: fixed;
