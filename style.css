@@ -21,26 +21,39 @@
 }
 
 html, body {
-    font-size: 60%;
-    height: 100%;
-    min-height: 100vh;
-    overflow-x: hidden;
+  font-size: 60%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  /* بلا أي height/min-height هنا */
 }
+
 
 
 /* الخلفية ثابتة */
 body {
-    background: var(--text-color);
-    color: var(--text-color);
-    overflow-x: hidden;
-    background-image: url('images/greenBackground.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-   
-/*     background-attachment: fixed;
- */
+  background-color: var(--text-color);
+  color: var(--text-color);
+  background-image: url('images/greenBackground.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 
+  /* بدون background-attachment: fixed */
 }
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('images/greenBackground.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
 
 section {
     min-height: 100vh;
