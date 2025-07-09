@@ -20,12 +20,13 @@
 
 }
 
-html {
-  font-size: 60%;
-  overflow-x: hidden;
+html, body {
   margin: 0;
   padding: 0;
-  /* بلا أي height/min-height هنا */
+  overflow-x: hidden;
+  font-size: 60%;  /* أو 16px لو تحبين */
+  height: 100%;
+  min-height: 100%;
 }
 
 
