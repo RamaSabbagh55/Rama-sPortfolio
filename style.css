@@ -19,29 +19,46 @@
         2px -2px 0px var(--bg--color), -2px 2px 0px var(--bg--color);
 
 }
-
-html, body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  font-size: 60%;  /* أو 16px لو تحبين */
-  height: 100%;
-  min-height: 100%;
+html {
+    font-size: 60%;
+    overflow-x: hidden;
 }
 
 
+html {
+  box-sizing: border-box;
+  height: 100%;
+  
+}
 
-/* الخلفية ثابتة */
-/* القاعدة العامة لكل الأجهزة: بدون fixed */
 body {
-  background-color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-size: 60%;
+  min-height: 100dvh;
+  background-color: transparent; /* خليها شفافة */
   color: var(--text-color);
+  position: relative; /* ضروري علشان z-index يشتغل مضبوط */
+  z-index: 0;
+}
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: url('images/greenBackground.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: scroll; /* هذا يحل مشاكل الآيفون */
+   z-index: -1;/*يرسل الخلفية إلى خلف كل العناصر الأخرى. */
+
+
 }
+
+
 
 /* إذا العرض أكبر من 1024px (كمبيوتر أو لابتوب)، نحط fixed */
 @media (min-width: 1024px) {
@@ -49,7 +66,6 @@ body {
     background-attachment: fixed;
   }
 }
-
 
 
 
