@@ -220,6 +220,9 @@ document.querySelectorAll('a[href="#projects"]').forEach(el => {
 
   window.addEventListener('scroll', onScroll);
 
+window.addEventListener('load', () => {
+  startTyping();
+});
   // تشغيل عند الضغط على رابط #about في القائمة لو موجود
   const aboutLink = document.querySelector('a[href="#about"]');
   if (aboutLink) {
