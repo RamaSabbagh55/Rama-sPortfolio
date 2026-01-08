@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rama Sabbagh</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet" />
+  <!-- نوع الخط للكود البرمجي -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!--icons for Projects Card -->
+  <link rel="icon" type="image/png" sizes="48x48" href="images/tap favicon2.png">
+  <!-- اذا تبين حجم tab اكبر لازم تقصي الصورة على مقاسه بالضبط-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+
+<body>
+  <script>
+    (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "l97T3y3sOJbzSTmOsaJOn"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+  </script>
+  <div class="home-wrapper">
+    <header class="header">
+      <a href="#home" class="logo"><img src="images/tap favicon2.png" alt="Logo" class="logo-img">
+
+      </a>
+      <!-- أيقونة القائمة (تفتح السايدبار) -->
+      <i class='bx bx-menu' id="menu-icon"></i>
+
+      <!-- سايدبار -->
+      <nav class="sidebar" id="sidebar">
+        <span class="close-btn" id="close-btn">&times;</span> <!-- زر × -->
+
+        <ul>
+          <li><a href="#home" class="active">Home{}</a></li>
+          <li><a href="#about">About{}</a></li>
+          <li><a href="#skills">Skills{}</a></li>
+          <li><a href="#projects">Projects{}</a></li>
+        </ul>
+      </nav>
+      <nav class="navbar">
+        <a href="#home" class="active">Home{}</a>
+        <a href="#about">About{}</a>
+        <a href="#skills">Skills{}</a>
+        <a href="#projects">Projects{}</a>
+        <a href="#"><i class='bx bx-menu' id="menu-icon"></i></a>
+
+        <!-- <a href="#contact">Contact</a> -->
+      </nav>
+    </header>
+
+    <!-- Hero-section animated -->
+    <section class="animated">
+
+      <section class="home" id="home" style="scroll-margin-top: 110px; ">
+        <div class="home-content">
+          <h1>Software Engineer</h1>
+          <h3 class="text-animation"><span id="Iam">I'm a</span> <span id="typed-text"></span><span id="cursor">|</span>
+          </h3>
+          <p>Hi there! I'm Rama, a motivated software engineer at UQU
+          </p>
+
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/rama-sa-b36b61334/"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/RamaSabbagh55"><i class='bx bxl-github'></i></a>
+            <a href="mailto:ramasabbaggh55@gmail.com"><i class='bx bx-envelope'></i></a>
+            <a href="https://x.com/rama__saa" target="_blank">
+              <img src="https://freepnglogo.com/images/all_img/1691832708new-twitter-x-logo-white.png" alt="X Logo"
+                width="24">
+            </a>
+
+          </div>
+
+          <div class="btn-group">
+            <a href="Rama_M_Sabbagh_Coop_CV.pdf" class="btn">Resume</a>
+            <a href="#projects" class="btn2">My Project</a>
+          </div>
+
+
+      </section>
+      <div id="particles-js"></div>
+
+  </div>
+
+
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-container">
+      <div class="video-and-buttons">
+        <!-- الفيديو في اليسار -->
+        <div class="sticker-container">
+          <video autoplay loop muted playsinline width="150" height="150" controlslist="nodownload noremoteplayback"
+            disablePictureInPicture>
+            <source src="videos/video.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="btn-about">
+          <div class="btnAbout1"> <span id="yearsOFEXP">20+</span> <span id="aboutbtncontent">Projects</span></div>
+          <div class="btnabout2"><span id="yearsOFEXP">4+</span><span id="aboutbtncontent">Exps</span> </div>
+        </div>
+      </div>
+      <!-- المحتوى في اليمين -->
+      <div class="about-content">
+        <div class="terminal">
+          <div class="terminal-header">
+            <!-- أزرار التحكم -->
+            <div class="terminal-buttons">
+              <span class="red"></span>
+              <span class="yellow"></span>
+              <span class="green"></span>
+              <!-- العنوان جنب الأزرار -->
+              <span class="terminal-title">About Me{}</span>
+            </div>
+          </div>
+          <div class="terminal-content">
+            <div class="line green">1. $ cat about_me.txt</div>
+            <div class="line">2. Name: Rama Sabbagh</div>
+            <div class="line">3. Role: Software Engineer 👩🏻‍💻</div>
+            <div class="line">4. Education: BSc in Software Engineering - Umm Al-Qura University</div>
+            <div class="line">5. Location: Saudi Arabia, Makkah</div>
+            <div class="line">6. Interests: <span class="highlight">UI/UX Design</span>, <span
+                class="highlight">Front-End Development</span>, <span class="highlight"> Mobile
+                Development</span></div>
+            <div class="line">8. Goal: Design and develop meaningful digital experiences that merge intuitive user
+              interfaces, elegant front-end development, and scalable mobile solutions — with the goal of making
+              technology more accessible and beautiful.
+            </div>
+            <br />
+            <div class="line green">$ _</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="skills" id="skills">
+    <h2 class="heading">Skills & <span
+        style="color: rgb(157, 255, 157);font-family:Georgia, 'Times New Roman', Times, serif; font-weight: 1222"
+        ;>Abilities{}</span>
+    </h2>
+    <div class="container">
+      <div class="row" id="skillsContainer">
+        <div class="bar">
+          <div class="info">
+            <img src="images/figma.png" alt="Figma">
+            <span>Figma</span>
+          </div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <img src="images/python.png" alt="Framer">
+            <span>Python</span>
+          </div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <img src="images/flutter-logo.png" alt="Photoshop">
+            <span>Flutter</span>
+          </div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <img src="images/spring-boot-logo transparent.png" alt="WordPress">
+            <span>Spring boot</span>
+          </div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <img src="images/digital art2.png" alt="Angular">
+            <span>Digital Art</span>
+          </div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <img src="https://th.bing.com/th/id/R.6c8f0a0e377cfa70efcd35ff52893b17?rik=iqhl8JD0f9LLpA&pid=ImgRaw&r=0"
+              alt="Webflow">
+            <span>HTML</span>
+          </div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <img src="https://th.bing.com/th/id/R.6a2208d38b81f26eb5d6f40f4b0ec77e?rik=h9eRGoTnw80biw&pid=ImgRaw&r=0"
+              alt="Python">
+            <span>CSS </span>
+          </div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <img src="images/JS logo.png" alt="Sketch">
+            <span>JavaScript</span>
+          </div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <img src="https://th.bing.com/th/id/R.5314430cc8d56b459320e1ce1fb27934?rik=MRf1A2tgP287MA&pid=ImgRaw&r=0"
+              alt="Python">
+            <span>Java</span>
+          </div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <img
+              src="https://th.bing.com/th/id/R.3938e0e2787cbf423ab5b52f29792bdf?rik=qji9xIGM2UZEFQ&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fdatabase-icons-download-248-free-database-icon-page-1-1113.png&ehk=8uSv1qR7vuw2WFFZ%2bpJm91aqdImDEAcCHequf8IcYVA%3d&risl=&pid=ImgRaw&r=0"
+              alt="SQL">
+            <span>SQL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="projects " id="projects">
+    <h2 class="headinggg ">My Projects{}</h2>
+    <div class="project-container">
+      <div class="project-card">
+        <div class="project-image">
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">The Red Sea</h3>
+          <p class="project-description">
+            Offers a comprehensive guide to exciting attractions, activities, and accommodations in the region. It also
+            provides booking services for luxurious hotels, and excursions for a seamless travel experience
+
+
+          </p>
+          <div class="tech-tags">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+          <div class="project-buttons">
+            <a href="https://github.com/RamaSabbagh55/The-Red-Sea.git" class="btn-live" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://drive.google.com/file/d/1Dtr_1uWAvvv98IgeDjRedabaVyXdXYrx/view" class="btn-code"
+              title="Docs">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="project-card">
+        <div class="project-image">
+          <!-- <img src="images/Rayah (3).png" alt="Project Image"> -->
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Rehaal</h3>
+          <p class="project-description">
+            Simplifies trip planning by allowing users to create custom trips, stay organized with reminders, and
+            easily manage existing trips and profiles for a more personalized travel experience.
+          </p>
+          <div class="tech-tags">
+            <span class="tech-tag">Flutter</span>
+            <span class="tech-tag">Dart</span>
+            <span class="tech-tag">Figma</span>
+
+          </div>
+          <div class="project-buttons">
+            <a href="https://github.com/RamaSabbagh55/Rehal-.git" class="btn-live" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+              <a href="https://www.figma.com/design/sLftcg359KAWZXOJDirE89/RAHAAL---%D8%B1%D8%AD%D8%A7%D9%84?node-id=0-1&t=ubi3ErUnjVlZiPd8-1"
+                class="btn-live" title="Figma">
+                <i class="fa-brands fa-figma fa-lg"></i>
+
+
+              </a>
+
+            </a>
+            <a href="https://drive.google.com/file/d/1z3LmzfgHtRbUAVpIqu9wfdaBM0_7WUff/view" class="btn-code"
+              title="Docs">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="project-card">
+        <div class="project-image">
+          <!-- <img src="images/Rahaal.png" alt="Project Image"> -->
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Rayeh</h3>
+          <p class="project-description">
+            Application that enhances agricultural awareness by connecting users to local opportunities, using AI to
+            recommend crops, and enabling progress tracking and knowledge sharing within the community.
+
+
+          </p>
+          <div class="tech-tags">
+            <span class="tech-tag">Figma</span>
+          </div>
+          <div class="project-buttons">
+            <a href="https://www.figma.com/design/V6Uyl8MkV6j9IXk18Q2zvf/%D8%B1%D9%8A?node-id=0-1&t=gAXjEJJDzG7TE78q-1"
+              class="btn-live" title="Figma">
+              <i class="fa-brands fa-figma fa-lg"></i>
+
+
+            </a>
+            <a href="https://drive.google.com/file/d/1bom045ApSVml38QvEBzSr01eZ1PRr8ju/view" class="btn-code"
+              title="Docs">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
