@@ -264,6 +264,8 @@ section {
 
 .home-content {
     display: flex;
+    align-items: center; /* ← هذا يقوم بتوسيط المحتوى أفقياً */
+    justify-content: center; /* ← هذا يقوم بتوسيط المحتوى عمودياً */
     flex-direction: column;
     align-items: center;
     width: 100vw;
@@ -703,11 +705,13 @@ section {
 /* SKILLS SECTION */
 
 .skills {
-    text-align: center;
-    margin: auto;
+   
+   
+   
     padding: 2rem;
     border-radius: 1rem;
-    width: 60%;
+   justify-content: center;    /* توسيط أفقي */
+    align-items: center;   
     overflow: auto;
 }
 
@@ -729,11 +733,12 @@ section {
 
 .skills .container {
     border: #000 solid 2px;
-    background-color: #ffffffb2;
+    background-color: red;
     color: var(--text-color);
     border-radius: 1rem;
     padding: 6rem 4rem 4rem 4rem;
-    width: 90%;
+      max-width: 900px;
+   width: 100%;        
     margin: auto;
     margin-top: 5rem;
     display: flex;
@@ -753,16 +758,17 @@ section {
     padding: 1rem;
     border-radius: 0.5rem;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    width:auto;
     transition: 0.3s ease;
 }
 
 .skills .bar img {
     width: 50px;
     height: 50px;
+    object-fit:contain;
     margin-bottom: 0.5rem;
 }
 
@@ -1022,6 +1028,7 @@ section {
 
 
 
+
 @media (max-width: 768px) {
     html {
         font-size: 50%;
@@ -1029,6 +1036,8 @@ section {
 
     body {
         text-align: center;
+       align-items: center;
+
     }
 
     .header {
