@@ -250,7 +250,9 @@ section {
 /* animated background code*/
 
 /* Animation */
-
+.hori-row{
+    display:flex; flex-direction: row; justify-content: space-between;
+}
 .home {
     display: flex;
     justify-content: center;
@@ -943,8 +945,6 @@ section {
     display: flex;
     flex-direction: column;
     /* gap: 40px; */
-     align-items: flex-start; /* محاذاة كل المحتوى لليسار */
-  text-align: left; 
 }
 
 .project-title {
@@ -964,6 +964,7 @@ section {
     color: #000000;
     font-size: 1.30rem;
     line-height: 1.4;
+  
 }
 
 .tech-tags {
@@ -971,8 +972,12 @@ section {
     flex-wrap: wrap;
     gap: 6px;
     margin-top: 6px;
+    
 }
-
+.tech-tag:hover{
+    background: rgba(128, 128, 128, 0.16);
+border-color: #000;
+}
 .tech-tag {
     background-color: transparent;
     color: #000000;
@@ -982,28 +987,45 @@ section {
     border-radius: 9999px;
     font-weight: 2rem;
 }
+#Figma{
+color: #AD5447;
+}
 
+#Next{
+color: #1b1302;
+}
+
+#React{
+    color: #2784D5;
+}
+#Laravel{
+    color: #C53637;
+}
+#Filament{
+    color:#8F68CB;
+}
 .project-buttons {
     display: flex;
     gap: 8px;
     margin-top: 8px;
+    /* width: 50%; */
+    height: 60%;
 }
 
 
-/*ازرار الجيت هب والملف */
-.btn-live,
 .btn-code {
-    background: none;
-    border: none;
+    background: transparent;
     padding: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #34d399;
     cursor: pointer;
-    transition: transform 0.2s ease;
     font-size: 28px;
-    /* تحكم في حجم الأيقونات هنا */
+    border-radius: 100%;
+    border-width: 2px;
+    border-color: rgba(128, 128, 128, 0.237);
+    border-style:solid;
 }
 
 
@@ -1020,10 +1042,13 @@ section {
     opacity: 0.8;
     transition: opacity 0.2s ease, transform 0.2s ease;
 }
-
-.project-buttons a:hover i {
+.project-buttons a {
+    transition: all 0.3s ease
+}
+.project-buttons a:hover  {
     opacity: 10;
     transform: scale(1.1);
+    border-color: rgba(0, 0, 0, 0.651);
 }
 
 .project-container::-webkit-scrollbar {
