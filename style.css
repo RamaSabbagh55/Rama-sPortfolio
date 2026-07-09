@@ -895,18 +895,13 @@ section {
     overflow-x: auto;
     scrollbar-width: none; /* Firefox */
     scroll-behavior: smooth;
-    justify-content:flex-start; /* وليس center */
-    margin: auto; /* يوسطهم */
+    justify-content: center;
+
 
 }
 
 
 
-@media (min-width:1001px){
-    .projects-wrapper{
-        max-width:880px;
-        margin:auto;
-    }}
 .project-card {
     background-color: #ffffffed;
     border-radius: 12px;
@@ -922,10 +917,10 @@ section {
     border: 2px solid black;
     position: relative;
     scroll-snap-align: center;
+    flex: 0 0 auto; /* خليه بحجم ثابت */
     margin-inline: 5px; /* يخلي في فراغ بينهم */
     transition: transform 0.3s ease;
-width: 280px;
-flex: 0 0 auto;
+
 }
 
 .project-image {
