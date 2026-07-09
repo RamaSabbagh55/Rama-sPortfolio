@@ -896,25 +896,17 @@ section {
     scrollbar-width: none; /* Firefox */
     scroll-behavior: smooth;
     justify-content:flex-start; /* وليس center */
-   width: calc(280px * 3 + 20px * 2); /* 3 كروت فقط */
     margin: auto; /* يوسطهم */
 
 }
 
-@media (max-width: 992px) {
-    .project-card {
-        flex: 0 0 calc((100% - 20px) / 2);
-        max-width: calc((100% - 20px) / 2);
-    }
-}
 
-@media (max-width: 768px) {
-    .project-card {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-}
 
+@media (min-width:1001px){
+    .projects-wrapper{
+        max-width:880px;
+        margin:auto;
+    }}
 .project-card {
     background-color: #ffffffed;
     border-radius: 12px;
