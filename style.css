@@ -894,7 +894,7 @@ section {
     padding: 40px 16px;
     scrollbar-width: none; /* Firefox */
     scroll-behavior: smooth;
-    justify-content: center;
+    justify-content: flex-start;
 
 
 }
