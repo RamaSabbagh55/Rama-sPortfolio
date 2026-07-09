@@ -892,7 +892,6 @@ section {
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     padding: 40px 16px;
-    overflow-x: auto;
     scrollbar-width: none; /* Firefox */
     scroll-behavior: smooth;
     justify-content: center;
