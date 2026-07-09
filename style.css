@@ -895,12 +895,25 @@ section {
     overflow-x: auto;
     scrollbar-width: none; /* Firefox */
     scroll-behavior: smooth;
-    justify-content: center;
-
+    justify-content:flex-start; /* وليس center */
+   width: calc(280px * 3 + 20px * 2); /* 3 كروت فقط */
+    margin: auto; /* يوسطهم */
 
 }
 
+@media (max-width: 992px) {
+    .project-card {
+        flex: 0 0 calc((100% - 20px) / 2);
+        max-width: calc((100% - 20px) / 2);
+    }
+}
 
+@media (max-width: 768px) {
+    .project-card {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
 
 .project-card {
     background-color: #ffffffed;
@@ -917,10 +930,10 @@ section {
     border: 2px solid black;
     position: relative;
     scroll-snap-align: center;
-    flex: 0 0 auto; /* خليه بحجم ثابت */
     margin-inline: 5px; /* يخلي في فراغ بينهم */
     transition: transform 0.3s ease;
-
+width: 280px;
+flex: 0 0 auto;
 }
 
 .project-image {
